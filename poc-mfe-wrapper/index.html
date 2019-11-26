@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="keywords" content="Node.js,Express,Angular8,Material Design,Google-Charts,Redis,RabbitMQ,MongoDB,Docker,Docker-compose" />
+		<meta
+			name="description"
+			content="I will share my journey creating a POC to build a full microservice app. Full microservice means that I plan to build components in the front-end and back-end side separately, to help CI/CD process inside of the agile teams."
+		/>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="importmap-type" content="systemjs-importmap" />
+		<title>poc full microservice app</title>
+		<script type="systemjs-importmap">
+			{
+			  "imports": {
+				"mfeh-root": "http://localhost:4201/main.js",
+				"mfenav-root": "http://localhost:4202/main.js",
+				"app-shell-root": "http://localhost:4203/main.js",
+			    "single-spa": "js/single-spa.min.js"
+			  }
+			}
+		</script>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link href="css/css.css" rel="stylesheet" />
+		<link href="css/icon.css" rel="stylesheet" />
+		<link href="css/index.css" rel="stylesheet" />
+		<link rel="preload" href="js/single-spa.min.js" as="script" crossorigin="anonymous" />
+	</head>
+	<body>
+		<main role="main" id="container-fluid"></main>
+		<script src="js/zone.js"></script>
+		<script src="js/import-map-overrides.js"></script>
+		<script src="js/system.min.js"></script>
+		<script src="js/amd.min.js"></script>
+		<script src="js/named-exports.js"></script>
+		<script src="js/named-register.min.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+</html>
